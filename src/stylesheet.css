@@ -1,0 +1,53 @@
+.leftpane{
+    -fx-background-color: #dcdcdc;
+}
+.rightpane{
+    -fx-background-color: #FFFFFF;
+}
+.btn1{
+    -fx-background-color: #2e3d8a;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+}
+.btn1:hover{
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 10;
+    -fx-text-fill: #2e3d8a;
+    -fx-cursor: hand;
+    -fx-border-color: #2e3d8a;
+    -fx-border-width: 2;
+}
+.btn1:pressed{
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 10;
+    -fx-text-fill: #2e3d8a;
+    -fx-cursor: hand;
+    -fx-border-color: #2e3d8a;
+    -fx-border-width: 2;
+    -fx-font-size: 18; 
+}
+.btn2{
+    -fx-background: none;
+    -fx-border: none;
+    -fx-margin: 0;
+    -fx-padding:0;
+    -fx-cursor: hand;
+}
+.closebtn{
+    -fx-background-color: #2e3d8a;
+    -fx-text-fill: #FFFFFF;
+}
+.closebtn:hover{
+    -fx-background-color: #FF0000;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.backbtn{
+    -fx-background: none;
+    -fx-border: none;
+    -fx-border: none;
+    -fx-margin: 0;
+    -fx-padding:0;
+    -fx-cursor: hand;
+}

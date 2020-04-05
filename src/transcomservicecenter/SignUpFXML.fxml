@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transcomservicecenter.SignUpFXMLController">
+   <children>
+      <Pane fx:id="content_area" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" styleClass="rightpane" stylesheets="@../stylesheet.css">
+               <children>
+                  <Label layoutX="105.0" layoutY="60.0" text="Sign Up" textAlignment="CENTER" textFill="#2e3d8a">
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="43.0" layoutY="48.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../images/mainiconbw.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="sgnmail" layoutX="105.0" layoutY="157.0" prefHeight="23.0" prefWidth="289.0" promptText="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="sgnpass" layoutX="106.0" layoutY="292.0" prefHeight="17.0" prefWidth="289.0" promptText="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Label layoutX="105.0" layoutY="123.0" text="Please fill in your credentials." textAlignment="CENTER" textFill="#2e3d8a">
+                     <font>
+                        <Font name="Ebrima" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="register" layoutX="201.0" layoutY="474.0" mnemonicParsing="false" onAction="#register_account" prefHeight="50.0" prefWidth="109.0" styleClass="btn1" text="Register" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="combobox" layoutX="106.0" layoutY="427.0" opacity="0.7" prefHeight="31.0" prefWidth="176.0" promptText="Select Designation" />
+                  <Button layoutX="474.0" layoutY="2.0" mnemonicParsing="false" onAction="#close_app" styleClass="closebtn" text="X">
+                     <font>
+                        <Font name="Ebrima Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="fname" layoutX="105.0" layoutY="202.0" prefHeight="23.0" prefWidth="135.0" promptText="First Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="sgnphone" layoutX="105.0" layoutY="382.0" prefHeight="17.0" prefWidth="289.0" promptText="Phone">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="lname" layoutX="260.0" layoutY="202.0" prefHeight="23.0" prefWidth="135.0" promptText="Last Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="sgnconpass" layoutX="105.0" layoutY="337.0" prefHeight="17.0" prefWidth="289.0" promptText="Confirm Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="3.0" layoutY="1.0" mnemonicParsing="false" onAction="#onClick" prefHeight="23.0" prefWidth="23.0" styleClass="backbtn">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" onMouseClicked="#back_to_menu" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="445.0" layoutY="5.0" mnemonicParsing="false" onAction="#minimize_app" styleClass="backbtn">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/minimize.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <DatePicker fx:id="db" layoutX="106.0" layoutY="247.0" opacity="0.8" prefWidth="289.0" promptText="Date of Birth" />
+                  <Label fx:id="txtlbl2" layoutX="282.0" layoutY="130.0" prefHeight="21.0" prefWidth="150.0" textFill="#bc1515">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtlbl3" layoutX="282.0" layoutY="130.0" prefHeight="21.0" prefWidth="150.0" textFill="#31ab21">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" styleClass="leftpane" stylesheets="@../stylesheet.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="75.0" layoutY="96.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../images/mainicon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="281.0" style="-fx-font-weight: bold;" stylesheets="@../stylesheet.css" text="Transcom" textAlignment="CENTER" textFill="#2e3d8a">
+                     <font>
+                        <Font name="Century Gothic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Reflection fraction="0.57" topOpacity="0.16" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="542.0" text="Your problem, our solution" textAlignment="CENTER" textFill="#2e3d8a">
+                     <font>
+                        <Font name="Arial Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

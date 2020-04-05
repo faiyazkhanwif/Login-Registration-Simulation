@@ -1,0 +1,14 @@
+Email: faiyaz@gmail.com
+FirstName: Faiyaz
+LastName: Khan
+DateofBirth: 18-05-1998
+Password: helloworld
+Phone: 43643634622
+Designation: Admin
+Email: geralt@gmail.com
+FirstName: Geralt
+LastName: Rivia
+DateofBirth: 06-04-1989
+Password: iamwitcher
+Phone: 23532523642
+Designation: Customer
