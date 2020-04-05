@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TranscomServiceCenter.jnlp">
+  <information>
+    <title>TranscomServiceCenter</title>
+    <vendor>faiya</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TranscomServiceCenter.jar" size="30347" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TranscomServiceCenter" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="transcomservicecenter.Main"  name="TranscomServiceCenter" />
+  <update check="always"/>
+</jnlp>
